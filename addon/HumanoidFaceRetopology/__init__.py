@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Humanoid Face Retopology(HFR)",
     "author": "graytutor / ChatGPT-assisted",
-    "version": (1, 0, 0),
+    "version": (1, 0, 1),
     "blender": (4, 0, 0),
     "location": "View3D > Sidebar > HFR",
     "description": "Landmark-driven humanoid face retopology for Blender. Created with assistance from ChatGPT.",
@@ -1285,7 +1285,7 @@ def landmark_position_export_payload():
         })
     return {
         "hfr_export_type": "landmark_positions",
-        "addon_version": [1, 0, 0],
+        "addon_version": [1, 0, 1],
         "landmark_count": len(items),
         "missing_landmarks": missing,
         "landmarks": items,
@@ -1500,7 +1500,7 @@ def load_bundled_template_binding_payload():
     return payload
 
 
-def apply_bundled_template_binding(context, obj, replace_existing=False):
+def apply_bundled_template_binding(context, obj, replace_existing=True):
     """Apply templates/HFRTemplateBinding.json when it is bundled.
 
     This is intentionally automatic for the default template path.  A shared
@@ -1548,7 +1548,7 @@ def load_default_template_asset(context, replace=False, select_loaded=True):
         if existing is not None:
             scene.hfr_template_obj = existing
             try:
-                apply_bundled_template_binding(context, existing, replace_existing=False)
+                apply_bundled_template_binding(context, existing, replace_existing=True)
             except Exception as exc:
                 print("[HFR] Bundled template binding apply skipped: %s" % exc)
             if bool(select_loaded):
@@ -1583,7 +1583,7 @@ def load_default_template_asset(context, replace=False, select_loaded=True):
         pass
     scene.hfr_template_obj = obj
     try:
-        apply_bundled_template_binding(context, obj, replace_existing=False)
+        apply_bundled_template_binding(context, obj, replace_existing=True)
     except Exception as exc:
         print("[HFR] Bundled template binding apply skipped: %s" % exc)
     if bool(select_loaded):
@@ -1813,7 +1813,7 @@ def export_template_binding_payload(context, obj):
             bound.append(lm_id)
         payload = {
             "hfr_export_type": "template_binding",
-            "addon_version": [1, 0, 0],
+            "addon_version": [1, 0, 1],
             "template_object": obj.name,
             "mesh_name": obj.data.name,
             "vertex_count": len(obj.data.vertices),
@@ -14992,7 +14992,7 @@ class HFR_OT_ExportMeshVertexDiagnostic(bpy.types.Operator):
 
         payload = {
             "hfr_export_type": "mesh_vertex_diagnostic",
-            "addon_version": [1, 0, 0],
+            "addon_version": [1, 0, 1],
             "object": obj.name,
             "object_type": obj.type,
             "mode": obj.mode,
@@ -15490,6 +15490,15 @@ class HFR_OT_GenerateRetopology(bpy.types.Operator):
         mirror_sync_count = force_landmark_mirror_sync(scene, context)
 
         missing, empty, bound = binding_status_summary(template)
+        if missing or empty and bool(template.get(PID_TEMPLATE)):
+            # Release safety: default templates bundled from older .blend data can
+            # miss recently added anchor vertex groups. Repair from the bundled
+            # JSON before blocking generation. Custom templates are left alone.
+            try:
+                apply_bundled_template_binding(context, template, replace_existing=True)
+                missing, empty, bound = binding_status_summary(template)
+            except Exception as exc:
+                print("[HFR] Bundled template binding repair skipped: %s" % exc)
         if missing or empty:
             write_generate_report(template, None, generate_target_object(context), 0, 0, missing=missing, empty=empty, mirror_sync_count=mirror_sync_count, context=context)
             self.report({'ERROR'}, f"Template binding incomplete: {len(missing)} missing, {len(empty)} empty. See HFR_Generate_Report")

@@ -1,0 +1,57 @@
+CONTRIBUTING
+============
+
+Thank you for improving Humanoid Face Retopology (HFR).
+
+Development principles
+----------------------
+
+- Keep the basic user workflow simple: Setup -> Landmarks -> Generate -> Cleanup.
+- Keep template binding and diagnostics under DevOption.
+- Use Advanced only for user-facing detailed controls.
+- Release builds should hide DevOption by setting HFR_SHOW_DEV_OPTIONS = False.
+- Avoid exposing low-level solver parameters in the normal UI.
+- Do not make new IDProperty names longer than 63 characters.
+- Prefer relative / percentage-based movement rules for landmark and vertex-fit adjustments.
+- Preserve accepted baseline behavior unless a change explicitly targets it.
+
+Code style
+----------
+
+- Keep Blender operator labels short and clear.
+- Keep UI sections ordered by workflow.
+- Avoid adding buttons that duplicate an existing user path unless they serve a clearly different purpose.
+- When adding scene properties, use short property names and clear descriptions.
+
+Versioning
+----------
+
+Use semantic-like project versions in bl_info["version"]:
+
+- Patch version: UI text, documentation, small bug fixes.
+- Minor version: workflow changes, feature additions, meaningful behavior changes.
+- Major version: incompatible workflow or template changes.
+
+Bug reports
+-----------
+
+Useful reports include:
+
+- HFR version
+- Blender version
+- Operating system
+- Whether DevOption was enabled
+- Target mesh orientation and whether transforms were applied
+- Screenshot from front and side view
+- Steps to reproduce
+- Generated report if available from DevOption
+
+Pull request checklist
+----------------------
+
+- [ ] python -m py_compile addon/HumanoidFaceRetopology/__init__.py passes.
+- [ ] Basic UI opens in Blender.
+- [ ] DevOption can be hidden by setting HFR_SHOW_DEV_OPTIONS = False.
+- [ ] No new IDProperty name exceeds 63 characters.
+- [ ] README / docs are updated if user workflow changes.
+- [ ] Release zip was tested in a clean Blender preferences install.

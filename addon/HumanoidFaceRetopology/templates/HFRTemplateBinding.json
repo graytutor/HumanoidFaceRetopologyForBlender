@@ -3,7 +3,7 @@
   "addon_version": [
     1,
     0,
-    0
+    1
   ],
   "template_object": "FaceTemplate",
   "mesh_name": "Plane.001",

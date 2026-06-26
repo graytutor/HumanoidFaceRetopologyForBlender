@@ -1,0 +1,8 @@
+CHANGELOG
+=========
+
+v1.0.1 - Template binding package fix
+-------------------------------------
+
+- Fixed the release package so the bundled default template can restore its complete landmark binding data.
+- Reload Default Template, Initialize HFR Workspace, and Generate Retopology now recover the bundled template binding when needed.

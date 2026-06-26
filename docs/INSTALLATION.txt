@@ -6,7 +6,7 @@ Install release zip
 
 1. Download the release zip, for example:
 
-   HumanoidFaceRetopology_v1_0_0_release.zip
+   HumanoidFaceRetopology_v1_0_1_release.zip
 
 2. Open Blender.
 3. Go to Edit > Preferences > Add-ons.

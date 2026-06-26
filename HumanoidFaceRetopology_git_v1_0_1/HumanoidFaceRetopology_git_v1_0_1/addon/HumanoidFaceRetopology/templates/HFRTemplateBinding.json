@@ -1,0 +1,1051 @@
+{
+  "hfr_export_type": "template_binding",
+  "addon_version": [
+    1,
+    0,
+    1
+  ],
+  "template_object": "FaceTemplate",
+  "mesh_name": "Plane.001",
+  "vertex_count": 1488,
+  "edge_count": 2928,
+  "face_count": 1438,
+  "landmark_count": 110,
+  "bound_count": 110,
+  "missing_count": 0,
+  "empty_count": 0,
+  "missing": [],
+  "empty": [],
+  "bindings": {
+    "eye_l_inner": {
+      "group": "HFR_A_eye_l_inner",
+      "vertices": [
+        [
+          968,
+          1.0
+        ]
+      ]
+    },
+    "eye_l_upper_inner": {
+      "group": "HFR_A_eye_l_upper_inner",
+      "vertices": [
+        [
+          792,
+          1.0
+        ]
+      ]
+    },
+    "eye_l_upper": {
+      "group": "HFR_A_eye_l_upper",
+      "vertices": [
+        [
+          978,
+          1.0
+        ]
+      ]
+    },
+    "eye_l_upper_outer": {
+      "group": "HFR_A_eye_l_upper_outer",
+      "vertices": [
+        [
+          979,
+          1.0
+        ]
+      ]
+    },
+    "eye_l_outer": {
+      "group": "HFR_A_eye_l_outer",
+      "vertices": [
+        [
+          803,
+          1.0
+        ]
+      ]
+    },
+    "eye_l_lower_outer": {
+      "group": "HFR_A_eye_l_lower_outer",
+      "vertices": [
+        [
+          804,
+          1.0
+        ]
+      ]
+    },
+    "eye_l_lower": {
+      "group": "HFR_A_eye_l_lower",
+      "vertices": [
+        [
+          1012,
+          1.0
+        ]
+      ]
+    },
+    "eye_l_lower_inner": {
+      "group": "HFR_A_eye_l_lower_inner",
+      "vertices": [
+        [
+          845,
+          1.0
+        ]
+      ]
+    },
+    "eye_r_inner": {
+      "group": "HFR_A_eye_r_inner",
+      "vertices": [
+        [
+          230,
+          1.0
+        ]
+      ]
+    },
+    "eye_r_upper_inner": {
+      "group": "HFR_A_eye_r_upper_inner",
+      "vertices": [
+        [
+          19,
+          1.0
+        ]
+      ]
+    },
+    "eye_r_upper": {
+      "group": "HFR_A_eye_r_upper",
+      "vertices": [
+        [
+          240,
+          1.0
+        ]
+      ]
+    },
+    "eye_r_upper_outer": {
+      "group": "HFR_A_eye_r_upper_outer",
+      "vertices": [
+        [
+          241,
+          1.0
+        ]
+      ]
+    },
+    "eye_r_outer": {
+      "group": "HFR_A_eye_r_outer",
+      "vertices": [
+        [
+          30,
+          1.0
+        ]
+      ]
+    },
+    "eye_r_lower_outer": {
+      "group": "HFR_A_eye_r_lower_outer",
+      "vertices": [
+        [
+          31,
+          1.0
+        ]
+      ]
+    },
+    "eye_r_lower": {
+      "group": "HFR_A_eye_r_lower",
+      "vertices": [
+        [
+          274,
+          1.0
+        ]
+      ]
+    },
+    "eye_r_lower_inner": {
+      "group": "HFR_A_eye_r_lower_inner",
+      "vertices": [
+        [
+          77,
+          1.0
+        ]
+      ]
+    },
+    "brow_l_inner": {
+      "group": "HFR_A_brow_l_inner",
+      "vertices": [
+        [
+          948,
+          1.0
+        ]
+      ]
+    },
+    "brow_l_center": {
+      "group": "HFR_A_brow_l_center",
+      "vertices": [
+        [
+          1284,
+          1.0
+        ]
+      ]
+    },
+    "brow_l_outer": {
+      "group": "HFR_A_brow_l_outer",
+      "vertices": [
+        [
+          991,
+          1.0
+        ]
+      ]
+    },
+    "brow_r_inner": {
+      "group": "HFR_A_brow_r_inner",
+      "vertices": [
+        [
+          210,
+          1.0
+        ]
+      ]
+    },
+    "brow_r_center": {
+      "group": "HFR_A_brow_r_center",
+      "vertices": [
+        [
+          575,
+          1.0
+        ]
+      ]
+    },
+    "brow_r_outer": {
+      "group": "HFR_A_brow_r_outer",
+      "vertices": [
+        [
+          253,
+          1.0
+        ]
+      ]
+    },
+    "nose_root": {
+      "group": "HFR_A_nose_root",
+      "vertices": [
+        [
+          2,
+          1.0
+        ]
+      ]
+    },
+    "nose_bridge_top": {
+      "group": "HFR_A_nose_bridge_top",
+      "vertices": [
+        [
+          198,
+          1.0
+        ]
+      ]
+    },
+    "nose_bridge": {
+      "group": "HFR_A_nose_bridge",
+      "vertices": [
+        [
+          4,
+          1.0
+        ]
+      ]
+    },
+    "nose_tip": {
+      "group": "HFR_A_nose_tip",
+      "vertices": [
+        [
+          206,
+          1.0
+        ]
+      ]
+    },
+    "nose_base": {
+      "group": "HFR_A_nose_base",
+      "vertices": [
+        [
+          52,
+          1.0
+        ]
+      ]
+    },
+    "nose_l_side_upper": {
+      "group": "HFR_A_nose_l_side_upper",
+      "vertices": [
+        [
+          971,
+          1.0
+        ]
+      ]
+    },
+    "nose_r_side_upper": {
+      "group": "HFR_A_nose_r_side_upper",
+      "vertices": [
+        [
+          233,
+          1.0
+        ]
+      ]
+    },
+    "nose_l_side_lower": {
+      "group": "HFR_A_nose_l_side_lower",
+      "vertices": [
+        [
+          973,
+          1.0
+        ]
+      ]
+    },
+    "nose_r_side_lower": {
+      "group": "HFR_A_nose_r_side_lower",
+      "vertices": [
+        [
+          235,
+          1.0
+        ]
+      ]
+    },
+    "nose_l_alar": {
+      "group": "HFR_A_nose_l_alar",
+      "vertices": [
+        [
+          799,
+          1.0
+        ]
+      ]
+    },
+    "nose_r_alar": {
+      "group": "HFR_A_nose_r_alar",
+      "vertices": [
+        [
+          26,
+          1.0
+        ]
+      ]
+    },
+    "nose_l_nostril": {
+      "group": "HFR_A_nose_l_nostril",
+      "vertices": [
+        [
+          1487,
+          1.0
+        ]
+      ]
+    },
+    "nose_r_nostril": {
+      "group": "HFR_A_nose_r_nostril",
+      "vertices": [
+        [
+          778,
+          1.0
+        ]
+      ]
+    },
+    "mouth_l_corner": {
+      "group": "HFR_A_mouth_l_corner",
+      "vertices": [
+        [
+          1065,
+          1.0
+        ]
+      ]
+    },
+    "mouth_r_corner": {
+      "group": "HFR_A_mouth_r_corner",
+      "vertices": [
+        [
+          332,
+          1.0
+        ]
+      ]
+    },
+    "mouth_upper_mid": {
+      "group": "HFR_A_mouth_upper_mid",
+      "vertices": [
+        [
+          67,
+          1.0
+        ]
+      ]
+    },
+    "mouth_lower_mid": {
+      "group": "HFR_A_mouth_lower_mid",
+      "vertices": [
+        [
+          85,
+          1.0
+        ]
+      ]
+    },
+    "mouth_l_upper": {
+      "group": "HFR_A_mouth_l_upper",
+      "vertices": [
+        [
+          1051,
+          1.0
+        ]
+      ]
+    },
+    "mouth_r_upper": {
+      "group": "HFR_A_mouth_r_upper",
+      "vertices": [
+        [
+          318,
+          1.0
+        ]
+      ]
+    },
+    "mouth_l_lower": {
+      "group": "HFR_A_mouth_l_lower",
+      "vertices": [
+        [
+          1071,
+          1.0
+        ]
+      ]
+    },
+    "mouth_r_lower": {
+      "group": "HFR_A_mouth_r_lower",
+      "vertices": [
+        [
+          338,
+          1.0
+        ]
+      ]
+    },
+    "cheek_l_center": {
+      "group": "HFR_A_cheek_l_center",
+      "vertices": [
+        [
+          841,
+          1.0
+        ]
+      ]
+    },
+    "cheek_r_center": {
+      "group": "HFR_A_cheek_r_center",
+      "vertices": [
+        [
+          73,
+          1.0
+        ]
+      ]
+    },
+    "outer_face_l_upper": {
+      "group": "HFR_A_outer_face_l_upper",
+      "vertices": [
+        [
+          1198,
+          1.0
+        ]
+      ]
+    },
+    "outer_face_r_upper": {
+      "group": "HFR_A_outer_face_r_upper",
+      "vertices": [
+        [
+          479,
+          1.0
+        ]
+      ]
+    },
+    "outer_face_l_lower": {
+      "group": "HFR_A_outer_face_l_lower",
+      "vertices": [
+        [
+          859,
+          1.0
+        ]
+      ]
+    },
+    "outer_face_r_lower": {
+      "group": "HFR_A_outer_face_r_lower",
+      "vertices": [
+        [
+          95,
+          1.0
+        ]
+      ]
+    },
+    "face_l_edge": {
+      "group": "HFR_A_face_l_edge",
+      "vertices": [
+        [
+          1362,
+          1.0
+        ]
+      ]
+    },
+    "face_r_edge": {
+      "group": "HFR_A_face_r_edge",
+      "vertices": [
+        [
+          653,
+          1.0
+        ]
+      ]
+    },
+    "jaw_l_edge": {
+      "group": "HFR_A_jaw_l_edge",
+      "vertices": [
+        [
+          1365,
+          1.0
+        ]
+      ]
+    },
+    "jaw_r_edge": {
+      "group": "HFR_A_jaw_r_edge",
+      "vertices": [
+        [
+          656,
+          1.0
+        ]
+      ]
+    },
+    "chin_center": {
+      "group": "HFR_A_chin_center",
+      "vertices": [
+        [
+          422,
+          1.0
+        ]
+      ]
+    },
+    "chin_l_outer": {
+      "group": "HFR_A_chin_l_outer",
+      "vertices": [
+        [
+          883,
+          1.0
+        ]
+      ]
+    },
+    "chin_r_outer": {
+      "group": "HFR_A_chin_r_outer",
+      "vertices": [
+        [
+          124,
+          1.0
+        ]
+      ]
+    },
+    "chin_l_lower_outer": {
+      "group": "HFR_A_chin_l_lower_outer",
+      "vertices": [
+        [
+          1358,
+          1.0
+        ]
+      ]
+    },
+    "chin_r_lower_outer": {
+      "group": "HFR_A_chin_r_lower_outer",
+      "vertices": [
+        [
+          649,
+          1.0
+        ]
+      ]
+    },
+    "chin_l_lower": {
+      "group": "HFR_A_chin_l_lower",
+      "vertices": [
+        [
+          1087,
+          1.0
+        ]
+      ]
+    },
+    "chin_r_lower": {
+      "group": "HFR_A_chin_r_lower",
+      "vertices": [
+        [
+          357,
+          1.0
+        ]
+      ]
+    },
+    "forehead_center": {
+      "group": "HFR_A_forehead_center",
+      "vertices": [
+        [
+          395,
+          1.0
+        ]
+      ]
+    },
+    "forehead_upper_center": {
+      "group": "HFR_A_forehead_upper_center",
+      "vertices": [
+        [
+          400,
+          1.0
+        ]
+      ]
+    },
+    "forehead_l_upper": {
+      "group": "HFR_A_forehead_l_upper",
+      "vertices": [
+        [
+          1347,
+          1.0
+        ]
+      ]
+    },
+    "forehead_r_upper": {
+      "group": "HFR_A_forehead_r_upper",
+      "vertices": [
+        [
+          638,
+          1.0
+        ]
+      ]
+    },
+    "temple_l_center": {
+      "group": "HFR_A_temple_l_center",
+      "vertices": [
+        [
+          1199,
+          1.0
+        ]
+      ]
+    },
+    "temple_r_center": {
+      "group": "HFR_A_temple_r_center",
+      "vertices": [
+        [
+          480,
+          1.0
+        ]
+      ]
+    },
+    "head_l_side_upper": {
+      "group": "HFR_A_head_l_side_upper",
+      "vertices": [
+        [
+          885,
+          1.0
+        ]
+      ]
+    },
+    "head_r_side_upper": {
+      "group": "HFR_A_head_r_side_upper",
+      "vertices": [
+        [
+          127,
+          1.0
+        ]
+      ]
+    },
+    "head_l_side_back": {
+      "group": "HFR_A_head_l_side_back",
+      "vertices": [
+        [
+          1164,
+          1.0
+        ]
+      ]
+    },
+    "head_r_side_back": {
+      "group": "HFR_A_head_r_side_back",
+      "vertices": [
+        [
+          441,
+          1.0
+        ]
+      ]
+    },
+    "scalp_front_center": {
+      "group": "HFR_A_scalp_front_center",
+      "vertices": [
+        [
+          449,
+          1.0
+        ]
+      ]
+    },
+    "scalp_top_center": {
+      "group": "HFR_A_scalp_top_center",
+      "vertices": [
+        [
+          459,
+          1.0
+        ]
+      ]
+    },
+    "scalp_back_center": {
+      "group": "HFR_A_scalp_back_center",
+      "vertices": [
+        [
+          483,
+          1.0
+        ]
+      ]
+    },
+    "scalp_l_front": {
+      "group": "HFR_A_scalp_l_front",
+      "vertices": [
+        [
+          1170,
+          1.0
+        ]
+      ]
+    },
+    "scalp_r_front": {
+      "group": "HFR_A_scalp_r_front",
+      "vertices": [
+        [
+          447,
+          1.0
+        ]
+      ]
+    },
+    "scalp_l_top": {
+      "group": "HFR_A_scalp_l_top",
+      "vertices": [
+        [
+          1179,
+          1.0
+        ]
+      ]
+    },
+    "scalp_r_top": {
+      "group": "HFR_A_scalp_r_top",
+      "vertices": [
+        [
+          457,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_top": {
+      "group": "HFR_A_ear_l_top",
+      "vertices": [
+        [
+          1421,
+          1.0
+        ],
+        [
+          1422,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_front_upper": {
+      "group": "HFR_A_ear_l_front_upper",
+      "vertices": [
+        [
+          888,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_front_middle": {
+      "group": "HFR_A_ear_l_front_middle",
+      "vertices": [
+        [
+          870,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_front_lower": {
+      "group": "HFR_A_ear_l_front_lower",
+      "vertices": [
+        [
+          886,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_back_upper": {
+      "group": "HFR_A_ear_l_back_upper",
+      "vertices": [
+        [
+          1423,
+          1.0
+        ],
+        [
+          1424,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_back_middle": {
+      "group": "HFR_A_ear_l_back_middle",
+      "vertices": [
+        [
+          1427,
+          1.0
+        ],
+        [
+          1428,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_back_lower": {
+      "group": "HFR_A_ear_l_back_lower",
+      "vertices": [
+        [
+          1429,
+          1.0
+        ],
+        [
+          1430,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_inner_front_middle": {
+      "group": "HFR_A_ear_l_inner_front_middle",
+      "vertices": [
+        [
+          1466,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_inner_bottom": {
+      "group": "HFR_A_ear_l_inner_bottom",
+      "vertices": [
+        [
+          1464,
+          1.0
+        ]
+      ]
+    },
+    "ear_l_lobe": {
+      "group": "HFR_A_ear_l_lobe",
+      "vertices": [
+        [
+          1431,
+          1.0
+        ],
+        [
+          1432,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_top": {
+      "group": "HFR_A_ear_r_top",
+      "vertices": [
+        [
+          712,
+          1.0
+        ],
+        [
+          713,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_front_upper": {
+      "group": "HFR_A_ear_r_front_upper",
+      "vertices": [
+        [
+          130,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_front_middle": {
+      "group": "HFR_A_ear_r_front_middle",
+      "vertices": [
+        [
+          108,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_front_lower": {
+      "group": "HFR_A_ear_r_front_lower",
+      "vertices": [
+        [
+          128,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_back_upper": {
+      "group": "HFR_A_ear_r_back_upper",
+      "vertices": [
+        [
+          714,
+          1.0
+        ],
+        [
+          715,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_back_middle": {
+      "group": "HFR_A_ear_r_back_middle",
+      "vertices": [
+        [
+          718,
+          1.0
+        ],
+        [
+          719,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_back_lower": {
+      "group": "HFR_A_ear_r_back_lower",
+      "vertices": [
+        [
+          720,
+          1.0
+        ],
+        [
+          721,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_inner_front_middle": {
+      "group": "HFR_A_ear_r_inner_front_middle",
+      "vertices": [
+        [
+          757,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_inner_bottom": {
+      "group": "HFR_A_ear_r_inner_bottom",
+      "vertices": [
+        [
+          755,
+          1.0
+        ]
+      ]
+    },
+    "ear_r_lobe": {
+      "group": "HFR_A_ear_r_lobe",
+      "vertices": [
+        [
+          722,
+          1.0
+        ],
+        [
+          723,
+          1.0
+        ]
+      ]
+    },
+    "nape_center": {
+      "group": "HFR_A_nape_center",
+      "vertices": [
+        [
+          165,
+          1.0
+        ]
+      ]
+    },
+    "nape_l_outer": {
+      "group": "HFR_A_nape_l_outer",
+      "vertices": [
+        [
+          915,
+          1.0
+        ]
+      ]
+    },
+    "nape_r_outer": {
+      "group": "HFR_A_nape_r_outer",
+      "vertices": [
+        [
+          164,
+          1.0
+        ]
+      ]
+    },
+    "neck_front_center": {
+      "group": "HFR_A_neck_front_center",
+      "vertices": [
+        [
+          134,
+          1.0
+        ]
+      ]
+    },
+    "neck_back_center": {
+      "group": "HFR_A_neck_back_center",
+      "vertices": [
+        [
+          539,
+          1.0
+        ]
+      ]
+    },
+    "neck_l_side": {
+      "group": "HFR_A_neck_l_side",
+      "vertices": [
+        [
+          1406,
+          1.0
+        ]
+      ]
+    },
+    "neck_r_side": {
+      "group": "HFR_A_neck_r_side",
+      "vertices": [
+        [
+          697,
+          1.0
+        ]
+      ]
+    },
+    "neck_top_l_front": {
+      "group": "HFR_A_neck_top_l_front",
+      "vertices": [
+        [
+          1403,
+          1.0
+        ]
+      ]
+    },
+    "neck_top_l_side": {
+      "group": "HFR_A_neck_top_l_side",
+      "vertices": [
+        [
+          1239,
+          1.0
+        ]
+      ]
+    },
+    "neck_top_l_back": {
+      "group": "HFR_A_neck_top_l_back",
+      "vertices": [
+        [
+          1251,
+          1.0
+        ]
+      ]
+    },
+    "neck_top_r_front": {
+      "group": "HFR_A_neck_top_r_front",
+      "vertices": [
+        [
+          694,
+          1.0
+        ]
+      ]
+    },
+    "neck_top_r_side": {
+      "group": "HFR_A_neck_top_r_side",
+      "vertices": [
+        [
+          527,
+          1.0
+        ]
+      ]
+    },
+    "neck_top_r_back": {
+      "group": "HFR_A_neck_top_r_back",
+      "vertices": [
+        [
+          542,
+          1.0
+        ]
+      ]
+    }
+  }
+}

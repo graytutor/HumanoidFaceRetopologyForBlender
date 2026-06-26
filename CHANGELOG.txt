@@ -1,11 +1,8 @@
 CHANGELOG
 =========
 
-v1.0.0 - First public release
------------------------------
+v1.0.1 - Template binding package fix
+-------------------------------------
 
-- Initial public release of Humanoid Face Retopology(HFR).
-- Includes the bundled default humanoid face retopology template.
-- Includes the bundled default template binding data.
-- Provides the main workflow: select Target Mesh, create and adjust landmarks, then generate retopology.
-- Includes user-facing Advanced options for more detailed control when needed.
+- Fixed the release package so the bundled default template can restore its complete landmark binding data.
+- Reload Default Template, Initialize HFR Workspace, and Generate Retopology now recover the bundled template binding when needed.

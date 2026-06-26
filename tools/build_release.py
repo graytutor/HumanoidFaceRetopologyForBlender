@@ -19,8 +19,8 @@ EXCLUDE_SUFFIXES = {".pyc", ".pyo"}
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "addon" / "HumanoidFaceRetopology"
 DIST = ROOT / "dist"
-VERSION = "v1_0_0"
-PACKAGE_NAME = f"HumanoidFaceRetopology_{VERSION}"
+VERSION = "v1_0_1"
+PACKAGE_NAME = "HumanoidFaceRetopology"
 
 
 def copytree_clean(src: Path, dst: Path) -> None:
@@ -39,7 +39,7 @@ def main() -> None:
     text = re.sub(r"HFR_SHOW_DEV_OPTIONS\s*=\s*(True|False)", "HFR_SHOW_DEV_OPTIONS = False", text)
     init_py.write_text(text, encoding="utf-8")
 
-    zip_path = DIST / f"{PACKAGE_NAME}_release.zip"
+    zip_path = DIST / f"HumanoidFaceRetopology_{VERSION}_release.zip"
     if zip_path.exists():
         zip_path.unlink()
 

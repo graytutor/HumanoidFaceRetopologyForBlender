@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Blender backups and autosaves
+*.blend1
+*.blend2
+*.blend@
+*.blend~
+*.autosave.blend
+
+# Build outputs
+dist/
+build/
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / diagnostics
+*.log
+HFR_Generate_Report*.txt
+HFR_*Diagnostic*.txt
