@@ -1,0 +1,85 @@
+ADVANCED AND DEVOPTION
+======================
+
+HFR separates non-basic controls into two categories.
+
+Advanced: user-facing detailed controls
+---------------------------------------
+
+Advanced is for users who want more control but are still using the default bundled template and binding.
+
+Advanced may include:
+
+- Landmark Tools
+  - Save Landmark Position
+  - Load Landmark Position
+  - Export Landmark Position
+  - Fit All To Target
+  - Fit Face
+- Output / Snap
+  - Output Name
+  - Replace Existing
+  - Wire Output
+  - Output In Front
+  - Mirror Finish
+  - Snap To Target
+  - Snap Strength
+  - Anchor protection
+  - Ear and eye snap guards
+- Feature Controls
+  - MLS Field
+  - Guide Rails
+  - Guide Follow
+  - Feature Loops
+  - Eye Boundary
+  - Brow Ridge
+  - Nose Web
+  - Nose Alar
+  - Ear Local
+  - Ear Lobe
+  - Neck Fit
+
+These options can affect user-visible results, but they are still intended for practical use.
+
+DevOption: developer-only controls
+----------------------------------
+
+DevOption is for add-on development, template maintenance, and diagnostic work.
+
+DevOption may include:
+
+- Diagnostics
+  - Export Selected Vertices
+  - Export Mesh Vertex Diagnostic
+  - Export Generate Report
+  - Refresh HFR Guides
+  - Update HFR Landmark Style
+- Template Binding
+  - Binding Mode
+  - Create Anchor Groups On Template
+  - Bind Selected Vertices
+  - Select Bound
+  - Clear Active Binding
+  - Mirror Anchors
+  - Validate Template Binding
+- Solver Parameters
+  - Deform Power
+  - Nearest Anchors
+  - Anchor Lock / iterations
+  - Topo Propagate internals
+  - Guide rail internals
+  - MLS internals
+  - Eye/nose/brow/ear/neck low-level parameters
+
+Release policy
+--------------
+
+Development build:
+
+HFR_SHOW_DEV_OPTIONS = True
+
+Release build:
+
+HFR_SHOW_DEV_OPTIONS = False
+
+When this flag is False, the DevOption toggle and DevOption panels are not drawn in the UI.

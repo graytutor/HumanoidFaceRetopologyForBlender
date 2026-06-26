@@ -1,0 +1,79 @@
+DEVELOPER GUIDE
+===============
+
+Source structure
+----------------
+
+The add-on code lives in:
+
+addon/HumanoidFaceRetopology/__init__.py
+
+Bundled template assets live in:
+
+addon/HumanoidFaceRetopology/templates/HFRTemplate.blend
+addon/HumanoidFaceRetopology/templates/HFRTemplateBinding.json
+
+Build a release zip
+-------------------
+
+Use the helper script:
+
+python tools/build_release.py
+
+The script copies the add-on package, sets HFR_SHOW_DEV_OPTIONS = False, and writes an installable zip to dist/.
+
+Manual release build
+--------------------
+
+1. Copy addon/HumanoidFaceRetopology to a temporary folder.
+2. Edit __init__.py.
+3. Set:
+
+   HFR_SHOW_DEV_OPTIONS = False
+
+4. Zip the add-on folder.
+5. Install the zip in a clean Blender preferences environment.
+6. Confirm DevOption does not appear.
+
+Compile check
+-------------
+
+Run:
+
+python -m py_compile addon/HumanoidFaceRetopology/__init__.py
+
+UI policy
+---------
+
+Normal user UI should remain:
+
+1. Setup
+2. Landmarks
+3. Generate
+4. Cleanup
+
+Advanced is for user-facing detailed controls.
+DevOption is for diagnostics, template binding, and solver internals.
+
+IDProperty rule
+---------------
+
+Do not introduce IDProperty names longer than 63 characters.
+
+Existing short key style examples:
+
+PID_LM = "HFR_lm"
+PID_LM_ID = "HFR_lm_id"
+PID_GUIDE = "HFR_g"
+PID_OUTPUT = "HFR_out"
+
+Landmark/fit rule
+-----------------
+
+When changing fit behavior, prefer relative or percentage-based motion:
+
+- slide toward another topology-relative point by a ratio
+- blend between landmark-derived positions
+- interpolate along guide rails or loops
+
+Avoid hard-coded absolute world-coordinate offsets as the core rule.

@@ -1,0 +1,100 @@
+USER GUIDE
+==========
+
+Before using HFR
+----------------
+
+Prepare the target mesh before using the add-on.
+
+Recommended target orientation:
+
+- Face front: Blender world -Y
+- Left/right: Blender world X
+- Up/down: Blender world Z
+- Symmetry center, when applicable: X = 0
+
+Apply object rotation and scale when possible before landmark placement.
+
+Basic workflow
+--------------
+
+1. Setup
+--------
+
+1. Select or assign the high-poly target object in Target Mesh.
+2. Click Initialize HFR Workspace.
+3. Confirm the status section shows:
+   - Target Mesh: OK
+   - Template Mesh: OK
+   - Template Binding: OK
+
+If Template Mesh is missing, click Reload Default Template.
+
+2. Landmarks
+------------
+
+1. Click Add All Landmarks.
+2. Move landmarks to match the target face.
+3. For symmetric targets, enable Landmark Mirror X.
+4. Choose the mirror direction:
+   - L -> R: edit left landmarks and update the matching right landmarks.
+   - R -> L: edit right landmarks and update the matching left landmarks.
+
+Useful placement order:
+
+1. Center line: nose bridge, nose tip, mouth center, chin, forehead, scalp, neck center.
+2. Eyes.
+3. Mouth.
+4. Nose side / alar / nostril.
+5. Cheek, jaw, and face edge.
+6. Scalp and head side.
+7. Ears.
+8. Neck and nape.
+
+This order is only a recommendation. The UI does not enforce it.
+
+3. Generate
+-----------
+
+1. Set Output Name if needed.
+2. Leave Replace Existing enabled for repeated testing.
+3. Click Generate Retopology.
+
+If the result is not acceptable, adjust landmarks and run Generate again.
+
+4. Cleanup
+----------
+
+Use cleanup only after you no longer need the current landmarks or guides.
+
+- Clean Unneeded Objects: removes/moves unnecessary HFR objects.
+- Delete HFR Landmarks / Guides: deletes the landmark and guide objects.
+
+Advanced controls
+-----------------
+
+Enable Advanced when the basic result needs finer control.
+
+Advanced contains user-facing controls only:
+
+- Landmark position save/load/export
+- Fit-to-target options for landmarks
+- Output display options
+- Snap to target controls
+- Mirror finish controls
+- Broad feature on/off controls
+
+Avoid changing multiple Advanced options at once. Change one area, regenerate, and compare.
+
+DevOption
+---------
+
+DevOption is not intended for normal use. In release builds, it should be hidden.
+
+Use DevOption only for:
+
+- Template binding maintenance
+- Binding diagnostics
+- Solver debugging
+- Exporting selected vertices or generate reports
+- Internal guide/style refresh operations

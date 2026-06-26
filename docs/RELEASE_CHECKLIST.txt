@@ -1,0 +1,49 @@
+RELEASE CHECKLIST
+=================
+
+Before packaging
+----------------
+
+- [ ] Update bl_info["version"].
+- [ ] Update README and CHANGELOG.
+- [ ] Confirm HFR_SHOW_DEV_OPTIONS = False for release zip.
+- [ ] Confirm bundled template files are present:
+  - templates/HFRTemplate.blend
+  - templates/HFRTemplateBinding.json
+- [ ] Run Python compile check.
+- [ ] Install the zip in a clean Blender setup.
+
+Blender UI check
+----------------
+
+- [ ] Add-on name is Humanoid Face Retopology(HFR).
+- [ ] Sidebar tab is HFR.
+- [ ] Main UI sections appear in order:
+  - 1. Setup
+  - 2. Landmarks
+  - 3. Generate
+  - 4. Cleanup
+- [ ] Advanced toggle appears.
+- [ ] DevOption toggle does not appear in release builds.
+- [ ] Template Binding is not visible in normal user UI.
+
+Functional smoke test
+---------------------
+
+- [ ] Assign Target Mesh.
+- [ ] Initialize HFR Workspace.
+- [ ] Add All Landmarks.
+- [ ] Move a few landmarks.
+- [ ] Generate Retopology.
+- [ ] Confirm output object is created.
+- [ ] Regenerate with Replace Existing enabled.
+- [ ] Cleanup operators run without errors.
+
+Documentation check
+-------------------
+
+- [ ] LICENSE exists.
+- [ ] NOTICE exists.
+- [ ] README has installation and basic workflow.
+- [ ] USER_GUIDE is up to date.
+- [ ] Advanced / DevOption policy is documented.

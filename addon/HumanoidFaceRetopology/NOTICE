@@ -1,0 +1,12 @@
+# Notices
+
+Humanoid Face Retopology (HFR) includes a bundled Blender template asset and a template binding JSON file:
+
+- `templates/HFRTemplate.blend`
+- `templates/HFRTemplateBinding.json`
+
+These files are distributed as part of the add-on package.
+
+The add-on is intended for humanoid face retopology workflows in Blender. Generated meshes depend on the user's target mesh, landmark placement, and Blender scene setup.
+
+This project is not affiliated with or endorsed by the Blender Foundation.
