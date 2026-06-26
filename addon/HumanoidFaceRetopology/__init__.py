@@ -1,10 +1,10 @@
 bl_info = {
     "name": "Humanoid Face Retopology(HFR)",
-    "author": "OpenAI / HumanoidFaceRetopo",
+    "author": "graytutor / ChatGPT-assisted",
     "version": (1, 0, 0),
     "blender": (4, 0, 0),
     "location": "View3D > Sidebar > HFR",
-    "description": "Adds, fits, and binds humanoid face template landmarks for HumanoidFaceRetopo.",
+    "description": "Landmark-driven humanoid face retopology for Blender. Created with assistance from ChatGPT.",
     "category": "Mesh",
 }
 

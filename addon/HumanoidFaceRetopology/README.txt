@@ -6,6 +6,12 @@ It uses a bundled symmetric face template, lets the user place facial/head/ear/n
 
 Current version: v1.0.0
 
+Development notice
+------------------
+
+This add-on was created using ChatGPT as a development assistant.
+Project decisions, testing, packaging, and release preparation are maintained by the project owner.
+
 Main workflow
 -------------
 
