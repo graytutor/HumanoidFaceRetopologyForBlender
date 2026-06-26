@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Humanoid Face Retopology(HFR)",
     "author": "graytutor / ChatGPT-assisted",
-    "version": (1, 0, 1),
+    "version": (1, 0, 2),
     "blender": (4, 0, 0),
     "location": "View3D > Sidebar > HFR",
     "description": "Landmark-driven humanoid face retopology for Blender. Created with assistance from ChatGPT.",
@@ -1285,7 +1285,7 @@ def landmark_position_export_payload():
         })
     return {
         "hfr_export_type": "landmark_positions",
-        "addon_version": [1, 0, 1],
+        "addon_version": [1, 0, 2],
         "landmark_count": len(items),
         "missing_landmarks": missing,
         "landmarks": items,
@@ -1486,7 +1486,7 @@ def choose_template_asset_object_name(available_names, preferred_name=None):
 
 
 def default_template_binding_path():
-    return os.path.join(addon_dir(), TEMPLATE_ASSET_DIR, DEFAULT_TEMPLATE_BINDING_JSON)
+    return os.path.join(addon_root_dir(), TEMPLATE_ASSET_DIR, DEFAULT_TEMPLATE_BINDING_JSON)
 
 
 def load_bundled_template_binding_payload():
@@ -1813,7 +1813,7 @@ def export_template_binding_payload(context, obj):
             bound.append(lm_id)
         payload = {
             "hfr_export_type": "template_binding",
-            "addon_version": [1, 0, 1],
+            "addon_version": [1, 0, 2],
             "template_object": obj.name,
             "mesh_name": obj.data.name,
             "vertex_count": len(obj.data.vertices),
@@ -14992,7 +14992,7 @@ class HFR_OT_ExportMeshVertexDiagnostic(bpy.types.Operator):
 
         payload = {
             "hfr_export_type": "mesh_vertex_diagnostic",
-            "addon_version": [1, 0, 1],
+            "addon_version": [1, 0, 2],
             "object": obj.name,
             "object_type": obj.type,
             "mode": obj.mode,

@@ -19,7 +19,7 @@ EXCLUDE_SUFFIXES = {".pyc", ".pyo"}
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "addon" / "HumanoidFaceRetopology"
 DIST = ROOT / "dist"
-VERSION = "v1_0_1"
+VERSION = "v1_0_2"
 PACKAGE_NAME = "HumanoidFaceRetopology"
 
 

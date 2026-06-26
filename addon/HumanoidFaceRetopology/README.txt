@@ -4,7 +4,7 @@ HUMANOID FACE RETOPOLOGY (HFR)
 Humanoid Face Retopology (HFR) is a Blender add-on for landmark-driven humanoid face retopology.
 It uses a bundled symmetric face template, lets the user place facial/head/ear/neck landmarks on a high-poly target, then generates a lower-density retopology mesh fitted to the target surface.
 
-Current version: v1.0.1
+Current version: v1.0.2
 
 Development notice
 ------------------
@@ -144,7 +144,7 @@ tools/
 Installation from a release zip
 -------------------------------
 
-1. Download the release zip, for example HumanoidFaceRetopology_v1_0_1_release.zip.
+1. Download the release zip, for example HumanoidFaceRetopology_v1_0_2_release.zip.
 2. In Blender, open Edit > Preferences > Add-ons.
 3. Click Install... and select the zip file.
 4. Enable Humanoid Face Retopology(HFR).
@@ -163,4 +163,4 @@ This project is distributed under the MIT License. See LICENSE.
 Status
 ------
 
-HFR v1.0.1 is the current public release. It includes the bundled default template, bundled landmark binding data, and the user-facing retopology workflow.
+HFR v1.0.2 is the current public release. It includes the bundled default template, bundled landmark binding data, and the user-facing retopology workflow.
